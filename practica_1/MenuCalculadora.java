@@ -90,6 +90,5 @@ break;
 
 System.out.println("\n===Opcion invalida===\n");
 }
-        sc.close();
     }
 }
