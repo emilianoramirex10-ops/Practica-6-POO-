@@ -1,14 +1,30 @@
 import java.util.Scanner;
 import practica_1.MenuCalculadora;
-import practica_2.SumaPares;
+
+import practica_2.BuscadorMultiplos;
 import practica_2.Fusion;
 import practica_2.Separacion;
+import practica_2.SumaPares;
+import practica_3.Cadenas;
+import practica_3.DatosCurp;
+import practica_3.Ejemplo;
+import practica_3.Palindromo;
+import practica_3.RFC;
+
+import practica_4.ContadorLetras;
+import practica_4.SobrecargaCadenas;
+
+import practica_5.Automovil;
+import practica_5.CarreraUniversitaria;
+import practica_5.MainComposicion;
+import practica_5.Materia;
+import practica_5.PruebaAutomovil;
 
 public class Main {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int opcion;
-        
         do {
             System.out.println("\n=== Catálogo de prácticas ===");
             System.out.println("1. Práctica 1");
@@ -20,20 +36,19 @@ public class Main {
             System.out.print("Seleccione una práctica (1-6): ");
 
             opcion = scanner.nextInt();
-            
             switch (opcion) {
-                case 1: {
+                case 1:
                     System.out.println("Ejecutando práctica 1...");
                     MenuCalculadora.main(args);
+
                     break;
-                }
                 case 2: {
                     System.out.println("Ejecutando práctica 2...");
                     int op2;
                     do {
                         System.out.println("\nPráctica 2");
-                        System.out.println("1. Buscador de Múltiplos");
-                        System.out.println("2. Fusion (Menú P2)");
+                        System.out.println("1. SumaPares");
+                        System.out.println("2. Fusion");
                         System.out.println("3. Separacion");
                         System.out.println("4. Regresar");
                         System.out.print("Seleccione un programa (1-4): ");
@@ -61,7 +76,7 @@ public class Main {
                 }
                 case 3: {
                     System.out.println("Ejecutando práctica 3...");
-                    int op3;
+                    int op2;
                     do {
                         System.out.println("\nPráctica 3");
                         System.out.println("1. Cadenas");
@@ -71,84 +86,86 @@ public class Main {
                         System.out.println("5. RFC");
                         System.out.println("6. Regresar");
                         System.out.print("Seleccione un programa (1-6): ");
-                        op3 = scanner.nextInt();
-                        
-                        switch (op3) {
+                        op2 = scanner.nextInt();
+
+                        switch (op2) {
+                            case 1:
+                                new Cadenas().ejecutar();
+                                break;
+                            case 2:
+                                new DatosCurp().ejecutar();
                                 break;
                             case 3:
-                                System.out.println("Nota: Asegurese de que Ejemplo tenga un metodo main o ejecutelo individualmente.");
+                                new Ejemplo().ejecutar(args);
                                 break;
                             case 4:
-                                System.out.println("Nota: Asegurese de que Palindromo tenga un metodo main o ejecutelo individualmente.");
+                                new Palindromo().ejecutar();
                                 break;
                             case 5:
-                                System.out.println("Nota: Asegurese de que RFC tenga un metodo main o ejecutelo individualmente.");
-                                break;
+                                new RFC().ejecutar();
                             case 6:
-                                System.out.println("Regresando...");
+                                System.out.println("Regresando al catálogo...");
                                 break;
                             default:
                                 System.out.println("Opción no válida.");
+                                break;
                         }
-                    } while (op3 != 6);
+                    } while (op2 != 6);
                     break;
                 }
                 case 4: {
                     System.out.println("Ejecutando práctica 4...");
-                    int op4;
+                    int op2;
                     do {
                         System.out.println("\nPráctica 4");
-                        System.out.println("1. ContadorLetras");
-                        System.out.println("2. SobrecargaCadenas");
-                        System.out.println("3. Regresar");
-                        System.out.print("Seleccione un programa (1-3): ");
-                        op4 = scanner.nextInt();
+                        System.out.println("1. SobrecargaCadenas");
+                        System.out.println("2. Regresar");
+                        System.out.print("Seleccione un programa (1-2): ");
+                        op2 = scanner.nextInt();
 
-                        switch (op4) {
+                        switch (op2) {
                             case 1:
-                                System.out.println("Nota: Asegurese de agregar el metodo main en ContadorLetras.");
+                                new SobrecargaCadenas().ejecutar();
                                 break;
                             case 2:
-                                System.out.println("Nota: Asegurese de agregar el metodo main en SobrecargaCadenas.");
-                                break;
-                            case 3:
-                                System.out.println("Regresando...");
+                                System.out.println("Regresando al catálogo...");
                                 break;
                             default:
                                 System.out.println("Opción no válida.");
+                                break;
                         }
-                    } while (op4 != 3);
+                    } while (op2 != 2);
                     break;
                 }
                 case 5: {
                     System.out.println("Ejecutando práctica 5...");
-                    int op5;
+                    int op2;
                     do {
                         System.out.println("\nPráctica 5");
-                        System.out.println("1. PruebaAutomovil");
-                        System.out.println("2. MainComposicion");
+                        System.out.println("1. Automovil");
+                        System.out.println("2. CarreraUniversitaria");
                         System.out.println("3. Regresar");
                         System.out.print("Seleccione un programa (1-3): ");
-                        op5 = scanner.nextInt();
+                        op2 = scanner.nextInt();
 
-                        switch (op5) {
+                        switch (op2) {
                             case 1:
-                                System.out.println("Nota: Asegurese de agregar el metodo main en PruebaAutomovil.");
+                                new PruebaAutomovil().ejecutar();
                                 break;
                             case 2:
-                                System.out.println("Nota: Asegurese de agregar el metodo main en MainComposicion.");
+                                new MainComposicion().ejecutar();
                                 break;
                             case 3:
-                                System.out.println("Regresando...");
+                                System.out.println("Regresando al catálogo...");
                                 break;
                             default:
                                 System.out.println("Opción no válida.");
+                                break;
                         }
-                    } while (op5 != 3);
-                    break;
+                    } while (op2 != 3);
                 }
                 case 6:
-                    System.out.println("Saliendo del programa...");
+                    System.out.println("Saliendo del programa");
                     break;
                 default:
                     System.out.println("Opción no válida.");
