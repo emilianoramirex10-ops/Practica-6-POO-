@@ -79,11 +79,6 @@ public class Main {
                         op3 = scanner.nextInt();
                         
                         switch (op3) {
-                            case 1:
-                                System.out.println("Nota: Asegurese de que Cadenas tenga un metodo main o ejecutelo individualmente.");
-                                break;
-                            case 2:
-                                System.out.println("Nota: Asegurese de que DatosCurp tenga un metodo main o ejecutelo individualmente.");
                                 break;
                             case 3:
                                 System.out.println("Nota: Asegurese de que Ejemplo tenga un metodo main o ejecutelo individualmente.");
