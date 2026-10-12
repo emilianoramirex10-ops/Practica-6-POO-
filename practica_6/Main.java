@@ -5,9 +5,20 @@ import practica_2.BuscadorMultiplos;
 import practica_2.Fusion;
 import practica_2.Separacion;
 
-import practica_3.*;
-import practica_4.*;
-import practica_5.*;
+import practica_3.Cadena;
+import practica_3.DatoCurp;
+import practica_3.Ejemplo;
+import practica_3.Palindromo;
+import practica_3.RFC;
+
+import practica_4.ContadorLetras;
+import practica_4.SobrecargaCadenas;
+
+import practica_5.Automovil;
+import practica_5.CarreraUniversitaria;
+import practica_5.MainComposicion;
+import practica_5.Materia;
+import practica_5.PruebaAutomovil;
 
 public class Main {
 
@@ -65,15 +76,95 @@ public class Main {
                 }
                 case 3:
                     System.out.println("Ejecutando práctica 3...");
+                    int op2;
+                     do {
+                        System.out.println("\nPráctica 3");
+                        System.out.println("1. Cadenas");
+                        System.out.println("2. DatosCurp");
+                        System.out.println("3. Ejemplo");
+                        System.out.println("4. Palindromo");
+                        System.out.println("5. RFC");
+                        System.out.println("6. Regresar");
+                        System.out.print("Seleccione un programa (1-6): ");
+                        op2 = scanner.nextInt();
+
+                        switch (op2) {
+                            case 1:
+                                Cadenas.main(args);
+                                break;
+                            case 2:
+                                DatosCurp.main(args);
+                                break;
+                            case 3:
+                                Ejemplo.main(args);
+                                break;
+                            case 4:
+                                Palindromo.main(args);
+                                break;
+                            case 5:
+                                RFC.main(args);
+                            case 6:
+                                System.out.println("Regresando al catálogo...");
+                                break;
+                            default:
+                                System.out.println("Opción no válida.");
+                                break;
+                        }
+                    } while (op2 != 6);
                     break;
                 case 4:
                     System.out.println("Ejecutando práctica 4...");
+                    int op2;
+                     do {
+                        System.out.println("\nPráctica 4");
+                        System.out.println("1. ContadorLetras");
+                        System.out.println("2. SobrecargaCadenas");
+                        System.out.println("3. Regresar");
+                        System.out.print("Seleccione un programa (1-3): ");
+                        op2 = scanner.nextInt();
+
+                        switch (op2) {
+                            case 1:
+                                ContadorLetras.main(args);
+                                break;
+                            case 2:
+                                SobrecargaCadenas.main(args);
+                                break;
+                            case 3:
+                                System.out.println("Regresando al catálogo...");
+                                break;
+                            default:
+                                System.out.println("Opción no válida.");
+                                break;
+                        }
+                    } while (op2 != 3);
                     break;
                 case 5:
                     System.out.println("Ejecutando práctica 5...");
-                    break;
-                case 6:
-                    System.out.println("Saliendo...");
+                    int op2;
+                     do {
+                        System.out.println("\nPráctica 5");
+                        System.out.println("1. Automovil");
+                        System.out.println("2. CarreraUniversitaria");
+                        System.out.println("3. Regresar");
+                        System.out.print("Seleccione un programa (1-3): ");
+                        op2 = scanner.nextInt();
+
+                        switch (op2) {
+                            case 1:
+                                PruebaAutomovil.main(args);
+                                break;
+                            case 2:
+                                MainComposicion.main(args);
+                                break;
+                            case 3:
+                                System.out.println("Regresando al catálogo...");
+                                break;
+                            default:
+                                System.out.println("Opción no válida.");
+                                break;
+                        }
+                    } while (op2 != 3);
                     break;
                 default:
                     System.out.println("Opción no válida.");
