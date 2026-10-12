@@ -1,7 +1,7 @@
 package practica_4;
 
 public class PruebaPunto {
-    public static void main(String[] args) {
+    public void ejecutar() {
         Punto p = new Punto();
         p.x = 5;
         p.y = 8;
