@@ -76,7 +76,6 @@ public class Main {
                 }
                 case 3:
                     System.out.println("Ejecutando práctica 3...");
-                    
                     int op2;
                      do {
                         System.out.println("\nPráctica 3");
@@ -88,6 +87,7 @@ public class Main {
                         System.out.println("6. Regresar");
                         System.out.print("Seleccione un programa (1-6): ");
                         op2 = scanner.nextInt();
+
                         switch (op2) {
                             case 1:
                                 Cadenas.main(args);
@@ -114,7 +114,7 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("Ejecutando práctica 4...");
-                     int op2;
+                    int op2;
                      do {
                         System.out.println("\nPráctica 4");
                         System.out.println("1. ContadorLetras");
@@ -141,7 +141,7 @@ public class Main {
                     break;
                 case 5:
                     System.out.println("Ejecutando práctica 5...");
-                     int op2;
+                    int op2;
                      do {
                         System.out.println("\nPráctica 5");
                         System.out.println("1. Automovil");
@@ -165,9 +165,6 @@ public class Main {
                                 break;
                         }
                     } while (op2 != 3);
-                    break;
-                case 6:
-                    System.out.println("Saliendo...");
                     break;
                 default:
                     System.out.println("Opción no válida.");
