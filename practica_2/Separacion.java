@@ -1,7 +1,7 @@
 package practica_2;
 
 import java.util.Scanner;
-public class Main {
+public class Separacion {
     public static void main(String[] args) {
         float area;
         int opcion;
@@ -40,5 +40,4 @@ public class Main {
 }
             System.out.println("El area es: " + area);
         } while (opcion != 4);
-        sc.close();
 } }

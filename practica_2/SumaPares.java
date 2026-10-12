@@ -36,6 +36,6 @@ public class SumaPares {
 
         //Imprimir el resultado
         System.out.println("La suma de los pares entre " + n1 + " y " + n2 + " es " + suma);
-        sc.close();
+        
     }
 }

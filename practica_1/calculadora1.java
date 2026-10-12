@@ -93,10 +93,8 @@ case "f":
     break;
  default:
 
-System.out.println("Opcion invalida. Por favor, elige una opcion
-valida.");
+System.out.println("Opcion invalida. Por favor, elige una opcion valida.");
 }
         } while (!opcion.equals("f"));
-        scanner.close();
     }
 }

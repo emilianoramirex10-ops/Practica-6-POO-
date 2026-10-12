@@ -16,7 +16,6 @@ System.out.println("División: INDEFINIDO");
 } else {
 }
 System.out.println("División: " + (numero1 / numero2));
-System.out.println("Potenciación: %.0f\n", Math.pow(numero1, numero2));
-scanner.close();
+System.out.printf("Potenciación: %.0f\n", Math.pow(numero1, numero2));
 }
 }
