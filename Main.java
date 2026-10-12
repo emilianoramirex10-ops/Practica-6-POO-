@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import practica_1.MenuCalculadora;
-import practica_2.BuscadorMultiplos;
+import practica_2.SumaPares;
 import practica_2.Fusion;
 import practica_2.Separacion;
 
@@ -41,12 +41,7 @@ public class Main {
 
                         switch (op2) {
                             case 1:
-                                System.out.println("Introduzca el primer número entero:");
-                                int n1 = scanner.nextInt();
-                                System.out.println("Introduzca el segundo número entero:");
-                                int n2 = scanner.nextInt();
-                                BuscadorMultiplos buscador = new BuscadorMultiplos(n1, n2);
-                                buscador.imprimirMultiplos();
+                                SumaPares.main(args);
                                 break;
                             case 2:
                                 Fusion.main(args);
